@@ -85,7 +85,7 @@ static func fetchDogImageURLFrom(url : URL , completionHandler : @escaping
     let mySession = URLSession.shared.dataTask(with: myURL) { data, response, error in
         if error != nil{
             print("unable to download")
-            print(error?.localizedDescription)
+            print(error!.localizedDescription)
             completionHandler(error,nil)
             return
         }
