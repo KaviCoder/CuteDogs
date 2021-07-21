@@ -15,6 +15,7 @@
 		5562AC5C26A7802000D5B2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5562AC5A26A7802000D5B2A3 /* LaunchScreen.storyboard */; };
 		5562AC6726A7802000D5B2A3 /* CuteDogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562AC6626A7802000D5B2A3 /* CuteDogsTests.swift */; };
 		5562AC7226A7802000D5B2A3 /* CuteDogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562AC7126A7802000D5B2A3 /* CuteDogsUITests.swift */; };
+		5562AC8226A7809300D5B2A3 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562AC8126A7809300D5B2A3 /* DogAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5562AC6D26A7802000D5B2A3 /* CuteDogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteDogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5562AC7126A7802000D5B2A3 /* CuteDogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsUITests.swift; sourceTree = "<group>"; };
 		5562AC7326A7802000D5B2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5562AC8126A7809300D5B2A3 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,9 @@
 		5562AC4E26A7801E00D5B2A3 /* CuteDogs */ = {
 			isa = PBXGroup;
 			children = (
-				5562AC4F26A7801E00D5B2A3 /* AppDelegate.swift */,
-				5562AC5126A7801E00D5B2A3 /* SceneDelegate.swift */,
-				5562AC5326A7801E00D5B2A3 /* ViewController.swift */,
-				5562AC5526A7801E00D5B2A3 /* Main.storyboard */,
-				5562AC5826A7802000D5B2A3 /* Assets.xcassets */,
-				5562AC5A26A7802000D5B2A3 /* LaunchScreen.storyboard */,
+				5562AC8326A7809B00D5B2A3 /* Modal */,
+				5562AC8026A7807700D5B2A3 /* View */,
+				5562AC7F26A7805D00D5B2A3 /* Controller */,
 				5562AC5D26A7802000D5B2A3 /* Info.plist */,
 			);
 			path = CuteDogs;
@@ -126,6 +125,34 @@
 				5562AC7326A7802000D5B2A3 /* Info.plist */,
 			);
 			path = CuteDogsUITests;
+			sourceTree = "<group>";
+		};
+		5562AC7F26A7805D00D5B2A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5562AC4F26A7801E00D5B2A3 /* AppDelegate.swift */,
+				5562AC5126A7801E00D5B2A3 /* SceneDelegate.swift */,
+				5562AC5326A7801E00D5B2A3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5562AC8026A7807700D5B2A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5562AC5526A7801E00D5B2A3 /* Main.storyboard */,
+				5562AC5826A7802000D5B2A3 /* Assets.xcassets */,
+				5562AC5A26A7802000D5B2A3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5562AC8326A7809B00D5B2A3 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				5562AC8126A7809300D5B2A3 /* DogAPI.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 				5562AC5426A7801E00D5B2A3 /* ViewController.swift in Sources */,
 				5562AC5026A7801E00D5B2A3 /* AppDelegate.swift in Sources */,
 				5562AC5226A7801E00D5B2A3 /* SceneDelegate.swift in Sources */,
+				5562AC8226A7809300D5B2A3 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
